@@ -9,12 +9,9 @@ ACM等の学会のプロシーディングスを各研究１ページの紹介�
 まずはACM DL等からプロシーディングスをダウンロードします。
 
 ダウンロード元は
-CHIだと
-https://dl.acm.org/conference/chi/proceedings
-IUIだと
-https://dl.acm.org/conference/iui/proceedings
-UISTだと
-https://dl.acm.org/conference/uist/proceedings
+CHIだと https://dl.acm.org/conference/chi/proceedings、
+IUIだと https://dl.acm.org/conference/iui/proceedings、
+UISTだと https://dl.acm.org/conference/uist/proceedings
 等に過去のプロシーディングス一覧がまとまっています。
 
 他のACMの多くの学会も以下のように学会のacronymをパスを設定すると出てきます。
