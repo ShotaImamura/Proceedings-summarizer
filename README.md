@@ -1,10 +1,26 @@
 ## システムの用途
 ACM等の学会のプロシーディングスを各研究１ページの紹介スライドにまとめるコードです
 
-まずはACM DL等からプロシーディングスをダウンロードします。
-続いて、以降のセットアップを用いてセットアップをしてください。
+
 
 ## セットアップ
+
+### 0. プロシーディングスのダウンロード
+まずはACM DL等からプロシーディングスをダウンロードします。
+
+ダウンロード元は
+CHIだと
+https://dl.acm.org/conference/chi/proceedings
+IUIだと
+https://dl.acm.org/conference/iui/proceedings
+UISTだと
+https://dl.acm.org/conference/uist/proceedings
+等に過去のプロシーディングス一覧がまとまっています。
+
+他のACMの多くの学会も以下のように学会のacronymをパスを設定すると出てきます。
+https://dl.acm.org/conference/****/proceedings
+
+続いて、以降のセットアップを用いてセットアップをしてください。
 
 ### 1. Python仮想環境の作成
 Pythonの仮想環境を作成し、`requirements.txt`をインストールします。
