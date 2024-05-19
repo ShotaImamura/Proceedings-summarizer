@@ -1,0 +1,51 @@
+## システムの用途
+ACM等の学会のプロシーディングスを各研究１ページの紹介スライドにまとめるコードです
+
+まずはACM DL等からプロシーディングスをダウンロードします。
+続いて、以降のセットアップを用いてセットアップをしてください。
+
+## セットアップ
+
+### 1. Python仮想環境の作成
+Pythonの仮想環境を作成し、`requirements.txt`をインストールします。
+
+```bash
+python -m venv env
+source env/bin/activate  # Windowsの場合は `env\Scripts\activate`
+pip install -r requirements.txt
+```
+
+### 2. OpenAI APIキーの設定
+OpenAIのAPIキーを環境変数`OPENAI_API_KEY`として設定します。
+
+```bash
+export OPENAI_API_KEY="your_openai_api_key"  # Windowsの場合は `set OPENAI_API_KEY=your_openai_api_key`
+```
+
+### 3. スクリプトの実行
+以下の順にスクリプトを実行します。
+
+```bash
+# 3.1 parse.pyの実行
+python parse.py <pdf file name>
+
+# 3.2 keyvisual.pyの実行
+python keyvisual.py
+
+```
+
+### 4. データベースの作成
+`create_db.py`を実行して論文データベースを作成します。
+
+```bash
+python create_db.py
+```
+
+### 5. 論文要約PDFの作成
+`make_pdf_jp.py`もしくは`make_pdf_en.py`を実行して、論文の要約PDFを作成します。
+
+```bash
+python make_pdf_jp.py  # 日本語の要約PDFを作成する場合
+python make_pdf_en.py  # 英語の要約PDFを作成する場合
+```
+

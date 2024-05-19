@@ -1,0 +1,10 @@
+data
+summarize/error
+.venv
+.DS_store
+
+#pptxとpdf（ただし、template.pdfは除く）
+*.pptx
+*.pdf
+!template.pdf
+*.db
