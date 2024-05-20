@@ -68,7 +68,7 @@ Error in inserting data: Incorrect number of bindings supplied.
 `make_pdf_jp.py`もしくは`make_pdf_en.py`を実行して、論文の要約PDFを作成します。
 
 ```bash
-python make_pdf_jp.py  # 日本語の要約PDFを作成する場合
+python make_pdf_jp.py  # 日本語の要約PDFを作成する場合。日本語版はoutputディレクトリに、全論文を要約したPDFと（デフォルトでは）100ページ毎に分割したPDF群が出力されます。
 python make_pdf_en.py  # 英語の要約PDFを作成する場合
 ```
 
