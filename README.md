@@ -54,6 +54,16 @@ python keyvisual.py
 python create_db.py
 ```
 
+OpenAIの出力の揺らぎやJSONのパースの問題でデータベースの作成時にエラーが出る場合があります。
+標準出力と、summarize/error/　にエラーが書き出されるようになっています。
+
+```
+Error in inserting data: Incorrect number of bindings supplied. 
+```
+というエラーが（新規に）ある場合にはcreate_db.pyを再実行してください。
+
+すでに要約済みのものはスキップした上で、正常に完了していない研究についての要約をデータベースに追加します。
+
 ### 5. 論文要約PDFの作成
 `make_pdf_jp.py`もしくは`make_pdf_en.py`を実行して、論文の要約PDFを作成します。
 
