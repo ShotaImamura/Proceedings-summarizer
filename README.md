@@ -71,4 +71,29 @@ Error in inserting data: Incorrect number of bindings supplied.
 python make_pdf_jp.py  # 日本語の要約PDFを作成する場合。日本語版はoutputディレクトリに、全論文を要約したPDFと（デフォルトでは）100ページ毎に分割したPDF群が出力されます。
 python make_pdf_en.py  # 英語の要約PDFを作成する場合
 ```
+## 参考
+このスクリプトは以下の議論支援システムの実装の一部分を活用して実装したものです。LLMの活用や情報収集支援、議論支援などにご関心がある方はよければご覧下さい。　　
 
+Serendipity Wall: A Discussion Support System Using Real-time Speech Recognition and Large Language Model  
+Serendipity Wall: 会話文字起こしのベクター検索と大規模言語モデルによる議論支援システム  
+https://dl.acm.org/doi/10.1145/3652920.3652931
+
+```
+@inproceedings{10.1145/3652920.3652931,
+author = {Imamura, Shota and Hiraki, Hirotaka and Rekimoto, Jun},
+title = {Serendipity Wall: A Discussion Support System Using Real-time Speech Recognition and Large Language Model},
+year = {2024},
+isbn = {9798400709807},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3652920.3652931},
+doi = {10.1145/3652920.3652931},
+abstract = {Group discussions are important for exploring new ideas. Discussion support systems will enhance human creative ability through better discussion experiences. One method to support discussions is presenting relevant keywords or images. However, the context of the conversation and information tended not to be taken into account. Therefore, we propose a system that develops group discussions by presenting related information in response to discussions. As a specific example, this study addressed academic discussions among HCI researchers. During brainstorming sessions, the system continuously transcribes the dialogue and generates embedding vectors of the discussions. These vectors are matched against those of existing research articles to identify relevant studies. Then, the system presented relevant studies on the screen with summaries by an LLM. In case studies, this system had the effect of broadening the topics of discussion and facilitating the acquisition of new knowledge. This study showed the possibility that AI can facilitate discussion by providing discussion support through information retrieval and summarizing.},
+booktitle = {Proceedings of the Augmented Humans International Conference 2024},
+pages = {237–247},
+numpages = {11},
+keywords = {Discussion, Embedding Vectors, Facilitation, Information retrieval, Large Language Models},
+location = {<conf-loc>, <city>Melbourne</city>, <state>VIC</state>, <country>Australia</country>, </conf-loc>},
+series = {AHs '24}
+}
+```
